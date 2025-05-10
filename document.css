@@ -1,0 +1,231 @@
+
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    } 
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+@keyframes bounce {
+    from, to { transform: translate(0); }
+    50% { transform:  translateY(-5px );}
+}
+@keyframes scanline {
+    from { opacity: 0.3;}
+    to { opacity: 1;}
+}
+
+
+@media screen and  (max-width: 768px) {
+html {
+    margin: 10px 20px;
+}
+    .header {
+        gap: 30px;
+    }
+    .Notification-introduction {
+        width: 40%;
+    }
+}
+
+html{
+    background-color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+margin: 10px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+   
+}
+.header {
+background-color: rgb(33, 34, 37);
+height: 65px;
+width: 100%;
+border-radius: 25px;
+display: flex;
+justify-content: center;
+gap: 15%;
+
+}
+.header a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    margin-top: 20px;
+  
+    
+}
+.header a:active{
+color: rgb(115, 116, 126);
+transition: all 0.3s ;
+animation: bounce 1.0s infinite;
+animation-timing-function:ease-in;
+
+
+}
+header a:hover{
+    color: rgb(157, 29, 232);
+    transition: all 0.3s ;
+    animation: bounce 1.0s infinite;
+    animation-timing-function:ease-in;
+}
+.line-in-home {
+    background-color:rgb(157, 29, 232); 
+    height: 2px;
+    width: 80%;
+    margin: 10px auto;
+    background: 
+linear-gradient(90deg, transparent 10%, rgb(157, 29, 232) 50%, transparent 90%);
+height: 2px;
+
+}
+.home  {
+    text-align: center;
+    
+    
+       
+    }
+    .home h3 {
+        margin-bottom: 5px;
+        color: rgb(35, 44, 51);
+        font-family:fantasy;
+        font-weight: lighter;
+        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+       
+    }
+    .text-home-style {
+        font-family: fantasy;
+        -webkit-animation: tracking-in-expand 2.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+    .home span {
+        color: rgb(35, 44, 51);
+    }
+    .home a {
+        color: rgb(157, 29, 232);
+        text-decoration:underline;
+        animation-delay: 1.5s;
+      
+    }
+    .partition-in-home {
+border-radius: 30px;
+background-color:rgb(157, 29, 232); ;
+max-width: 20%;
+max-height: 15%;
+width: 65px;
+height: 25px;
+color: aliceblue;
+font-family: fantasy;
+font-size: small;
+padding-top: 7px;
+margin: 10px auto;
+
+    }
+    .project{
+        height: 200px; /*просто отступ,чтоб не мешало,когда появятся проекты-я уберу. */
+    }
+    .text-error-style {
+        color: rgb(165, 43, 43);
+font-family: fantasy;
+text-align: center;
+    }
+.headline-about-me { 
+    margin: 10px auto;
+font-family:fantasy;
+font-size: 45px;
+margin-left: 30px;
+color:rgb(51, 25, 69) ;
+text-decoration: underline;
+text-decoration-style: dashed;
+text-decoration-color: rgb(69, 40, 103);
+text-align: center;
+
+}
+.headline-about-me span {
+color: rgb(157, 29, 232); 
+
+}
+
+
+ .photo {
+    background-image: url(photo-css.svg.jpg);
+    width: 200px;
+    height: 200px;
+ }
+
+    .Notification-introduction {  
+        width: 30% ;
+        max-height:30% ;
+        height: 100px;
+        background: rgb(157, 29, 232);  
+        border: 1px solid rgba(33, 34, 37, 0.7);
+        border-radius: 30px 30px 30px 0px;  ;
+        backdrop-filter: blur(5px); 
+        color: aliceblue;
+        font-family: fantasy;
+        text-align: center;
+        padding-top: 10px;
+        animation: scanline 2s steps(30) infinite alternate;
+        margin-left: 10%;
+      
+  
+    
+      }
+      .about-text-color {
+        font-weight: lighter;
+        color: rgb(236, 255, 153);
+        text-decoration: underline;
+      }
+    
+footer{
+    background-color: rgb(33, 34, 37);
+    color: aliceblue;
+height: 65px;
+width: 100%;
+border-radius: 25px;
+display: flex;
+justify-content: center;
+gap: 30px;
+
+}
+footer span {
+font-weight: bolder ;
+width: 100%;
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-top: 5px;
+font-family:monospace;
+font-size: 20px;
+
+}
+.partition {
+    background-color: rgb(161, 174, 185);
+    width: 100%;
+    max-width: 200px;
+    height: 1px;
+margin: 2px auto;
+} 
+footer a {
+    color: rgb(161, 174, 185);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+text-decoration:none;
+}
+
